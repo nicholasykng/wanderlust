@@ -6,4 +6,6 @@ end
 
 use Rack::MethodOverride
 use UsersController
+use DestinationsController
+use AttractionsController
 run ApplicationController
