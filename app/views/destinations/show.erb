@@ -1,2 +1,7 @@
 <h1><%= @destination.country %></h1>
 <h2><%= @destination.city %></h2>
+<form action="/destinations/<%= @destination.id %>" method="post">
+  <input type="hidden" id="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete Destination">
+</form>
+<a href="/destinations/<%= @destination.id%>/edit">Edit Destination</a>

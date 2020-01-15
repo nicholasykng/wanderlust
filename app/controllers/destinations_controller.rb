@@ -37,4 +37,52 @@ class DestinationsController < ApplicationController
       redirect to "/login"
     end
   end
+
+  get "/destinations/:id/edit"do
+    if logged_in?
+      @destination = Destination.find_by_id(params[:id])
+      if @destination && @destination.user == current_user
+        erb :"/destinations/edit"
+      else
+        redirect to "/destinations"
+      end
+    else
+      redirect to "/login"
+    end
+  end
+
+  patch "/destinations/:id" do
+    if logged_in?
+      if params[:city] == "" || params[:country] == ""
+        redirect to "/destinations/#{params[:id]}/edit"
+      else
+        @destination= Destination.find_by_id(params[:id])
+        if @destination && @destination.user == current_user
+          @destination.country = params[:country]
+          @destination.city = params[:city]
+          @destination.save
+          redirect to "/destinations/#{@destination.id}"
+        else
+          redirect to "/destinations"
+        end
+      end
+    else
+      redirect to "/login"
+    end
+  end
+
+  delete "/destinations/:id" do
+    if logged_in?
+      @destination = Destination.find_by_id(params[:id])
+      if @destination && @destination.user == current_user
+        @destination.delete
+        redirect to "/destinations"
+      else
+        redirect to "/destinations"
+      end
+    else
+      redirect to "/login"
+    end
+  end
+
 end
