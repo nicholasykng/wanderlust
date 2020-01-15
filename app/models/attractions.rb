@@ -1,3 +1,3 @@
-class Attractions < ActiveRecord::Base
+class Attraction < ActiveRecord::Base
   belongs_to :destination
 end

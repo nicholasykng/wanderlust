@@ -1,1 +1,6 @@
 <h2>Welcome to Wanderlust's Top Travel Destinations 2020</h2>
+<ul>
+<% @destinations.each do |destination|%>
+  <li><a href="/destinations/<%= destination.id %>"><%= destination.city %>, <%= destination.country %></a></li>
+  <% end %>
+</ul>
