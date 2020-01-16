@@ -1,8 +1,12 @@
 class AttractionsController < ApplicationController
   get "/destinations/:id/attractions/new" do
+    @destination = Destination.find_by(id: params[:id])
     if logged_in?
-      @destination = Destination.find_by(id: params[:id])
-      erb :"/attractions/show"
+      if @destination.user == current_user
+        erb :"/attractions/show"
+      else
+        redirect to "/destinations"
+      end
     else
       redirect to "/login"
     end
