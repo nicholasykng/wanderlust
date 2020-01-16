@@ -1,7 +1,7 @@
 class AttractionsController < ApplicationController
   get "/destinations/:id/attractions/new" do
     if logged_in?
-      @destination = Destination.find_by_id(params[:id])
+      @destination = Destination.find_by(id: params[:id])
       erb :"/attractions/show"
     else
       redirect to "/login"
@@ -9,8 +9,8 @@ class AttractionsController < ApplicationController
   end
 
   post "/attractions" do
+    @destination = Destination.find_by(id: params[:id])
     if logged_in?
-      @destination = Destination.find_by_id(params[:id])
       if params[:site] == "" || params[:comments] == ""
         redirect to "/destinations/#{@destination.id}/attractions/new"
       else

@@ -32,6 +32,7 @@ class DestinationsController < ApplicationController
   get "/destinations/:id" do
     if logged_in?
       @destination = Destination.find_by_id(params[:id])
+      @attractions = @destination.attractions
       erb :"/destinations/show"
     else
       redirect to "/login"
