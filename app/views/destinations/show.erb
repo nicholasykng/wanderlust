@@ -3,12 +3,15 @@
 <h2>Destination Created By: <%= @destination.user.username.capitalize %></h2>
 <ul>
 <% @attractions.each do |attraction| %>
-  <li><%= attraction.site %><%= attraction.comments %></li>
+  <li><%= attraction.site %> <%= attraction.comments %></li>
   <% end %>
 </ul>
+
+<a href="/destinations/<%= @destination.id %>/attractions/new">Add Attraction</a>
+<a href="/destinations/<%= @destination.id%>/edit">Edit Destination</a>
+<a href="/destinations">Return to All Destinations</a>
+<br><br>
 <form action="/destinations/<%= @destination.id %>" method="post">
   <input type="hidden" id="hidden" name="_method" value="delete">
   <input type="submit" value="Delete Destination">
 </form>
-<a href="/destinations/<%= @destination.id%>/edit">Edit Destination</a>
-<a href="/destinations">Return to All Destinations</a>
