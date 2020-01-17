@@ -1,4 +1,5 @@
-<h2>Welcome to Wanderlust's Top Travel Destinations 2020</h2>
+<h2>Welcome to Wanderlust's Top Travel Destinations 2020 Posted By Our Users</h2>
+<a href="/destinations/new">Click Here To Create A New Destination</a>
 <ul>
 <% @destinations.each do |destination|%>
   <li><a href="/destinations/<%= destination.id %>"><%= destination.city %>, <%= destination.country %></a></li>

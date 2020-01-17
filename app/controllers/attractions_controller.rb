@@ -46,7 +46,7 @@ class AttractionsController < ApplicationController
       @destination = Destination.find_by(id: params[:destination_id])
       @attraction = Attraction.find_by(id: params[:attraction_id])
       if params[:site] == "" || params[:comments] == ""
-        redirect to "/destinations/<%= @destination.id %>/<%= @attraction.id %>"
+        redirect to "/destinations/#{@destination.id}/#{@attraction.id}/edit"
       else
         @attraction.site = params[:site]
         @attraction.comments = params[:comments]

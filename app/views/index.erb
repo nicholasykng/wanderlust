@@ -1,8 +1,10 @@
 <h1>Wanderlust</h1>
 <h2>Where will the travel bug take you?</h2>
 <p>Please click Login or Create a New Account to explore your next travel destination</p>
+<br><br>
 <% if logged_in? %>
   <p>Welcome Back, <%= current_user.username.capitalize %>!</p>
+  <a href="/destinations">Click Here To Explore and Add New Destinations</a>
   <a href="logout">Logout</a>
 <% else %>
   <a href="/login">Log In</a>
