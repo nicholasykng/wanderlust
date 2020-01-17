@@ -1,0 +1,14 @@
+div.title_container {
+  text-align: center;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+.bg {
+  background-image: url(https://2o7fsh4anuayrnrhe3us6v71-wpengine.netdna-ssl.com/wp-content/uploads/2018/04/wanderlust-.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat :no-repeat;
+  background-size: cover;
+}
