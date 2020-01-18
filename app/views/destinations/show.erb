@@ -1,31 +1,39 @@
+<div class="title_container">
 <h1>Destination: <%= @destination.city %>, <%= @destination.country %></h1>
 <h2>Created By: <%= @destination.user.username.capitalize %></h2>
+</div>
 <br>
 
+<% if @destination.user == current_user %>
+  <div class="title_container">
+  <a href="/destinations/<%= @destination.id%>/edit">Edit Destination</a>
+</div>
+  <br>
+  <form action="/destinations/<%= @destination.id %>" method="post">
+    <input type="hidden" id="hidden" name="_method" value="delete">
+    <input type="submit" value="Delete Destination">
+  </form>
+  <% end %>
 <h3>Attractions:</h3>
 <ul>
 <% @attractions.each do |attraction| %>
 <li><h5><%= attraction.site %>:</h5>
 <%= attraction.comments %><br><br>
 <% if @destination.user == current_user %>
+  <div class="title_container">
   <a href="/destinations/<%= @destination.id %>/<%= attraction.id %>/edit">Edit Attraction</a>
+</div><br>
   <form action="/destinations/<%= @destination.id %>/<%= attraction.id %>" method="post">
     <input type="hidden" id="hidden" name="_method" value="delete">
     <input type="submit" value="Delete Attraction"></li>
   </form>
   <% end %>
   <% end %>
-</ul>
+</ul><br>
 
 
 <% if @destination.user == current_user %>
-  <a href="/destinations/<%= @destination.id %>/attractions/new">Add Attraction</a>
-  <a href="/destinations/<%= @destination.id%>/edit">Edit Destination</a>
-  <br><br><br>
-  <form action="/destinations/<%= @destination.id %>" method="post">
-  <input type="hidden" id="hidden" name="_method" value="delete">
-  <input type="submit" value="Delete Destination">
-  </form>
+  <a href="/destinations/<%= @destination.id %>/attractions/new">Add Attraction</a><br><br>
   <a href="/destinations">Return to All Destinations</a>
 <% else %>
   <a href="/destinations">Return to All Destinations</a>
