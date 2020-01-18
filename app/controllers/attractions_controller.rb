@@ -61,7 +61,7 @@ class AttractionsController < ApplicationController
     if logged_in?
       @destination = Destination.find_by(id: params[:destination_id])
       @attraction = Attraction.find_by(id: params[:attraction_id])
-      if @destination && @attraction && @attraction.user == current_user
+      if @destination && @attraction && @destination.user == current_user
         @attraction.delete
         redirect to "/destinations/#{@destination.id}"
       else
