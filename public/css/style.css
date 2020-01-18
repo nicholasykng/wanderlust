@@ -9,7 +9,7 @@ body, html {
   background-image: url(https://www.itl.cat/pngfile/big/29-294903_beautiful-places-most-beautiful-photos-of-nature-in.jpg);
   height: 100%;
   background-position: center;
-  background-repeat :no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -17,32 +17,11 @@ body, html {
   float: right;
 }
 
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  clear: both;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-auto-rows: minmax(150px, auto);
-  grid-gap: 1em;
-}
+.pic {
+  background-image: url(https://surfiran.com/wp-content/uploads/2019/02/Irans-Most-Wild-and-Beautiful-Places-by-National-Geographic.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-.module {
-  background: white;
-  height: 375px;
-  font-family: sans-serif;
-  color: #3C5466;
-  line-height: 22px;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-right: 15px;
-  margin-left: 5px;
-  margin-right: 5px;
-  flex: 1 1 200px;
-}
-.grid .module .box {
-  display: flex;
-  align-items: center;
-  padding-top: 20px;
-  padding-left: 10px;
 }

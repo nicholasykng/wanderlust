@@ -5,14 +5,14 @@
 <h3>Attractions:</h3>
 <ul>
 <% @attractions.each do |attraction| %>
-<li><%= attraction.site %>:<br><br>
+<li><h5><%= attraction.site %>:</h5>
 <%= attraction.comments %><br><br>
 <% if @destination.user == current_user %>
-  <a href="/destinations/<%= @destination.id %>/<%= attraction.id %>/edit">Edit Attraction</a></li>
+  <a href="/destinations/<%= @destination.id %>/<%= attraction.id %>/edit">Edit Attraction</a>
   <form action="/destinations/<%= @destination.id %>/<%= attraction.id %>" method="post">
     <input type="hidden" id="hidden" name="_method" value="delete">
-    <input type="submit" value="Delete Attraction">
-  </form><br><br>
+    <input type="submit" value="Delete Attraction"></li>
+  </form>
   <% end %>
   <% end %>
 </ul>
