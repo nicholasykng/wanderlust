@@ -18,7 +18,7 @@ body, html {
 }
 
 .pic {
-  background-image: url(https://surfiran.com/wp-content/uploads/2019/02/Irans-Most-Wild-and-Beautiful-Places-by-National-Geographic.jpg);
+  background-image: url(https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/08/30/15/kimolos-greece-shutterstock.jpg);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -44,4 +44,26 @@ div.transbox h1, p, form {
   font-weight: bold;
   color: #000000;
   text-align: center;
+}
+
+.pic_2 {
+  background-image: url(https://www.gannett-cdn.com/media/USATODAY/USATODAY/2013/12/12//1386873056000-177348429.jpg?width=2560);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.transbox h2, form, a {
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+
+.pic_3 {
+  background-image: url(https://static.businessinsider.sg/2019/12/12/56e04ecbdd0895d3708b47ac.png);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

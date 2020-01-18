@@ -6,8 +6,7 @@
 <br><br>
 <% if logged_in? %>
   <p>Welcome Back, <%= current_user.username.capitalize %>!</p>
-  <a href="/destinations">Click Here To Explore and Add New Destinations</a>
-  <a href="logout">Logout</a>
+  <a href="/destinations">Click Here To Explore and Add New Destinations</a><br><br>
 <% else %>
   <a href="/login">Login</a><br><br>
   <a href="/signups">Create a New Account</a>
