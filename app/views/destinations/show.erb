@@ -21,11 +21,12 @@
 <% if @destination.user == current_user %>
   <a href="/destinations/<%= @destination.id %>/attractions/new">Add Attraction</a>
   <a href="/destinations/<%= @destination.id%>/edit">Edit Destination</a>
-  <br><br>
+  <br><br><br>
   <form action="/destinations/<%= @destination.id %>" method="post">
   <input type="hidden" id="hidden" name="_method" value="delete">
   <input type="submit" value="Delete Destination">
   </form>
+  <a href="/destinations">Return to All Destinations</a>
 <% else %>
   <a href="/destinations">Return to All Destinations</a>
 <% end %>

@@ -25,3 +25,23 @@ body, html {
   background-size: cover;
 
 }
+
+.pic_1 {
+  background-image: url(https://www.iliketowastemytime.com/sites/default/files/northern-norway.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.transbox {
+  background-color: #ffffff;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+
+}
+div.transbox h1, p, form {
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
