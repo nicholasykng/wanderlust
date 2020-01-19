@@ -7,12 +7,11 @@
 <% if @destination.user == current_user %>
   <div class="title_container">
   <a href="/destinations/<%= @destination.id%>/edit">Edit Destination</a>
-</div>
-  <br>
+  <br><br>
   <form action="/destinations/<%= @destination.id %>" method="post">
     <input type="hidden" id="hidden" name="_method" value="delete">
     <input type="submit" value="Delete Destination">
-  </form>
+  </form></div>
   <% end %>
 <h3>Attractions:</h3>
 <ul>
@@ -22,11 +21,11 @@
 <% if @destination.user == current_user %>
   <div class="title_container">
   <a href="/destinations/<%= @destination.id %>/<%= attraction.id %>/edit">Edit Attraction</a>
-</div><br>
+  <br><br>
   <form action="/destinations/<%= @destination.id %>/<%= attraction.id %>" method="post">
     <input type="hidden" id="hidden" name="_method" value="delete">
     <input type="submit" value="Delete Attraction"></li>
-  </form>
+  </form></div>
   <% end %>
   <% end %>
 </ul><br>

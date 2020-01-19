@@ -2,7 +2,7 @@
 <div class="title_container">
 <h1>Edit Attraction</h1>
 <p>Please update the attraction and click Edit Attraction When Done</p>
-</div>
+
 <form action="/destinations/<%= @destination.id %>/<%= @attraction.id %>" method="post">
   <input type="hidden" id="hidden" name="_method" value="patch">
   <label>Attraction Site:</label>
@@ -13,4 +13,5 @@
   <br><br>
   <input type="hidden" name="attraction_id" value="<%= @attraction.id %>">
   <input type="submit" value="Edit Attraction">
+</div>
 </div>
