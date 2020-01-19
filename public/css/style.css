@@ -82,18 +82,11 @@ h1 {
   margin: 0; line-height: 1;
 }
 
-.pic_7 {
-  background-image: url();
+.color {
+  background-color: aqua;
   height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  width: 100%;
+  overflow: auto;
 
-.container {
-  position: relative;
-}
-
-.text_box {
 
 }

@@ -1,7 +1,5 @@
-<div class="pic_7">
-<div class="container">
-<div class="text_box">
-<div class="title_container">
+<div class="color">
+  <div class="title_container">
   <h1>Destination: <%= @destination.city %>, <%= @destination.country %></h1>
   <h2>Created By: <%= @destination.user.username.capitalize %></h2>
   </div>
@@ -21,18 +19,17 @@
       <% @attractions.each do |attraction| %>
       <li><h5><%= attraction.site %>:</h5>
       <%= attraction.comments %><br><br>
-      <% if @destination.user == current_user %>
+      <% if @destination.user == current_user %></li>
         <div class="title_container">
           <a href="/destinations/<%= @destination.id %>/<%= attraction.id %>/edit">Edit Attraction</a>
           <br><br>
           <form action="/destinations/<%= @destination.id %>/<%= attraction.id %>" method="post">
             <input type="hidden" id="hidden" name="_method" value="delete">
-            <input type="submit" value="Delete Attraction"></li>
+            <input type="submit" value="Delete Attraction">
           </form></div>
           <% end %>
         <% end %>
         </ul><br>
-
 
       <% if @destination.user == current_user %>
         <a href="/destinations/<%= @destination.id %>/attractions/new">Add Attraction</a><br><br>
@@ -40,4 +37,5 @@
       <% else %>
         <a href="/destinations">Return to All Destinations</a>
       <% end %>
+      
 </div>
