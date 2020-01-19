@@ -18,7 +18,7 @@ body, html {
 }
 
 .pic {
-  background-image: url(https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/08/30/15/kimolos-greece-shutterstock.jpg);
+  background-image: url(https://www.jetsetter.com/uploads/sites/7/2018/04/TVIr9ZjG-1380x690.jpeg);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -34,31 +34,17 @@ body, html {
   background-size: cover;
 }
 
-.transbox {
-  background-color: #ffffff;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
 
-}
-div.transbox h1, p, form {
-  font-weight: bold;
-  color: #000000;
-  text-align: center;
-}
 
 .pic_2 {
-  background-image: url(https://www.gannett-cdn.com/media/USATODAY/USATODAY/2013/12/12//1386873056000-177348429.jpg?width=2560);
+  background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/misty-autumn-foliage-in-rural-vermont-royalty-free-image-485083252-1561066924.jpg);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-div.transbox h2, form, a {
-  font-weight: bold;
-  color: #000000;
-  text-align: center;
-}
+
 
 .pic_3 {
   background-image: url(https://static.businessinsider.sg/2019/12/12/56e04ecbdd0895d3708b47ac.png);
@@ -66,4 +52,32 @@ div.transbox h2, form, a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.pic_4 {
+  background-image: url(https://www.roughguides.com/wp-content/uploads/2014/02/15.Indonesia-179671877.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pic_5 {
+  background-image: url(https://media.cntraveler.com/photos/5cb63a281a7e7057a7f70954/master/w_3000,h_2121,c_limit/Mulafossur-Waterfall-Faroe-Islands_GettyImages-1028143754.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pic_6 {
+  background-image: url(https://img.theculturetrip.com/x/smart/wp-content/uploads/2019/02/gpr7w8.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  margin: 0; line-height: 1;
 }

@@ -1,5 +1,6 @@
+<div class="pic_5">
 <div class="title_container">
-<h2>Edit Destination</h2>
+<h1>Edit Destination</h1>
 </div>
 <p>You may edit the country and city below and click Edit Destination when done.</p>
 <form action="/destinations/<%= @destination.id %>" method="post">
@@ -10,3 +11,4 @@
   <input type="text" name="city" id="city" value="<%= @destination.city %>">
   <input type="submit" value="Edit Destination">
 </form>
+</div>
