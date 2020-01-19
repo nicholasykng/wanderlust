@@ -1,17 +1,18 @@
 <div class="pic_6">
-<div class="title_container">
-<h1>Edit Attraction</h1>
-<p>Please update the attraction and click Edit Attraction When Done</p>
+  <div class="title_container">
+    <h1>Edit Attraction</h1>
+    <p>Please update the attraction and click Edit Attraction When Done</p>
 
-<form action="/destinations/<%= @destination.id %>/<%= @attraction.id %>" method="post">
-  <input type="hidden" id="hidden" name="_method" value="patch">
-  <label>Attraction Site:</label>
-  <input type="text" id="site" name="site" value="<%= @attraction.site %>">
-  <br><br>
-  <label>Comments:</label>
-  <input type="text" id="comments" name="comments" value="<%= @attraction.comments %>"></textarea>
-  <br><br>
-  <input type="hidden" name="attraction_id" value="<%= @attraction.id %>">
-  <input type="submit" value="Edit Attraction">
-</div>
+    <form action="/destinations/<%= @destination.id %>/<%= @attraction.id %>" method="post">
+      <input type="hidden" id="hidden" name="_method" value="patch">
+      <label>Attraction Site:</label>
+      <input type="text" id="site" name="site" value="<%= @attraction.site %>">
+      <br><br>
+      <label>Comments:</label>
+      <input type="text" id="comments" name="comments" value="<%= @attraction.comments %>"></textarea>
+      <br><br>
+      <input type="hidden" name="attraction_id" value="<%= @attraction.id %>">
+      <input type="submit" value="Edit Attraction">
+    </form>
+  </div>
 </div>

@@ -57,6 +57,7 @@ class AttractionsController < ApplicationController
       redirect to "/login"
     end
   end
+  
   delete "/destinations/:destination_id/:attraction_id" do
     if logged_in?
       @destination = Destination.find_by(id: params[:destination_id])

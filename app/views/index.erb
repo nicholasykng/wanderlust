@@ -1,15 +1,15 @@
 <div class="bg">
-<div class="title_container">
-<h1>Wanderlust</h1>
-<h2>Where will the travel bug take you?</h2>
-<p>Please click Login or Create a New Account to explore your next travel destination</p>
-<br><br>
-<% if logged_in? %>
-  <p>Welcome Back, <%= current_user.username.capitalize %>!</p>
-  <a href="/destinations">Click Here To Explore and Add New Destinations</a><br><br>
-<% else %>
-  <a href="/login">Login</a><br><br>
-  <a href="/signups">Create a New Account</a>
-<% end %>
-</div>
+  <div class="title_container">
+    <h1>Wanderlust</h1>
+    <h2>Where will the travel bug take you?</h2>
+    <p>Please click Login or Create a New Account to explore your next travel destination</p>
+    <br><br>
+    <% if logged_in? %>
+      <p>Welcome Back, <%= current_user.username.capitalize %>!</p>
+      <a href="/destinations">Click Here To Explore and Add New Destinations</a><br><br>
+    <% else %>
+      <a href="/login">Login</a><br><br>
+      <a href="/signups">Create a New Account</a>
+    <% end %>
+  </div>
 </div>
