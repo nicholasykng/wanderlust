@@ -1,10 +1,10 @@
 default: &default
-  adapter: 'sqlite3'
-  database: 'db/development.sqlite'
+  adapter: 'postgresql'
+  database: 'wanderlust_database'
 
 development:
   <<: *default
 
 test:
   <<: *default
-  database: 'db/test.sqlite'
+  database: 'wanderlust_database'
