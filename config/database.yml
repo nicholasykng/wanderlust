@@ -4,7 +4,12 @@ default: &default
 
 development:
   <<: *default
+  database: 'wanderlust_database'
 
 test:
+  <<: *default
+  database: 'wanderlust_database'
+
+production:
   <<: *default
   database: 'wanderlust_database'
