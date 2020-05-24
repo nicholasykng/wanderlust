@@ -4,6 +4,7 @@ class CreateAttractions < ActiveRecord::Migration[6.0]
       t.text :site
       t.text :comments
       t.integer :destination_id
+      t.integer :category_id
     end
   end
 end
