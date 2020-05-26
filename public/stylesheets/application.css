@@ -1,12 +1,14 @@
 div.title_container {
   text-align: center;
 }
+
 body, html {
   height: 100%;
   margin: 0;
 }
+
 .bg {
-  background-image: url(https://www.itl.cat/pngfile/big/29-294903_beautiful-places-most-beautiful-photos-of-nature-in.jpg);
+  background-image: url("https://www.itl.cat/pngfile/big/29-294903_beautiful-places-most-beautiful-photos-of-nature-in.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -18,7 +20,7 @@ body, html {
 }
 
 .pic {
-  background-image: url(https://www.jetsetter.com/uploads/sites/7/2018/04/TVIr9ZjG-1380x690.jpeg);
+  background-image: url("https://www.jetsetter.com/uploads/sites/7/2018/04/TVIr9ZjG-1380x690.jpeg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,7 +29,7 @@ body, html {
 }
 
 .pic_1 {
-  background-image: url(https://www.iliketowastemytime.com/sites/default/files/northern-norway.jpg);
+  background-image: url("https://www.iliketowastemytime.com/sites/default/files/northern-norway.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -37,7 +39,7 @@ body, html {
 
 
 .pic_2 {
-  background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/misty-autumn-foliage-in-rural-vermont-royalty-free-image-485083252-1561066924.jpg);
+  background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/misty-autumn-foliage-in-rural-vermont-royalty-free-image-485083252-1561066924.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -47,7 +49,7 @@ body, html {
 
 
 .pic_3 {
-  background-image: url(https://static.businessinsider.sg/2019/12/12/56e04ecbdd0895d3708b47ac.png);
+  background-image: url("https://static.businessinsider.sg/2019/12/12/56e04ecbdd0895d3708b47ac.png");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -55,7 +57,7 @@ body, html {
 }
 
 .pic_4 {
-  background-image: url(https://www.roughguides.com/wp-content/uploads/2014/02/15.Indonesia-179671877.jpg);
+  background-image: url("https://www.roughguides.com/wp-content/uploads/2014/02/15.Indonesia-179671877.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,7 +65,7 @@ body, html {
 }
 
 .pic_5 {
-  background-image: url(https://media.cntraveler.com/photos/5cb63a281a7e7057a7f70954/master/w_3000,h_2121,c_limit/Mulafossur-Waterfall-Faroe-Islands_GettyImages-1028143754.jpg);
+  background-image: url("https://media.cntraveler.com/photos/5cb63a281a7e7057a7f70954/master/w_3000,h_2121,c_limit/Mulafossur-Waterfall-Faroe-Islands_GettyImages-1028143754.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -71,7 +73,7 @@ body, html {
 }
 
 .pic_6 {
-  background-image: url(https://img.theculturetrip.com/x/smart/wp-content/uploads/2019/02/gpr7w8.jpg);
+  background-image: url("https://img.theculturetrip.com/x/smart/wp-content/uploads/2019/02/gpr7w8.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
