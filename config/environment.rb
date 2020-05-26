@@ -5,4 +5,3 @@ Bundler.require(:default, ENV['SINATRA_ENV'])
 #ActiveRecord::Base.establish_connection(ENV['SINATRA_ENV'].to_sym)
 set :database_file, "./database.yml"
 require_all 'app'
-require_all "public"
